@@ -1,3 +1,53 @@
+/*============WINDOW DISPLAYS==============*/
+html {
+    width: device-width;
+}
+@media screen and (max-width: 480px) {
+    html, body {
+        min-width: 320px;
+    }
+}
+body {
+    -ms-overflow-style: scrollbar;
+}
+@media screen and (max-width: 1680px) {
+    body, input, select, textarea {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    body, input, select, textarea {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 980px) {
+    body, input, select, textarea {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 736px) {
+    body, input, select, textarea {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 480px) {
+    body, input, select, textarea {
+        font-size: 12px;
+    }
+}
+.sidebar .adverts {
+    height: 30%;
+}
+@media screen and (max-height: 1280px) {
+    .sidebar .adverts {
+        height: 45%;
+    }
+}
+@media screen and (max-height: 736px) {
+    .sidebar .adverts {
+        width: 100%;
+    }
+}
 /*===============================WEBSITE LAYOUT=================================*/
 body {
     background-color:#FFC20E ;
@@ -12,8 +62,8 @@ body {
     max-width: 45%;
 }
 .logo {
-    min-width: 100%;
-    max-width: 45%;
+    width: 100%;
+    height: 100%;
 }
 #navibar {
     background-color: #6F3198;
@@ -28,13 +78,13 @@ body {
     list-style: none;
     margin: 10px auto 0;
     width: 935px;
-    max-width: 45%;
+    max-width: 30%;
     min-width: 100%;
     padding: 0;
 }
 #navibar ul li {
     float: right;
-    padding-right: 5px;
+    padding-right: 5px;    
 }
 ul li a {
     color: black;
@@ -70,17 +120,12 @@ ul li a {
     margin-right: auto;
     margin-bottom: 10px;
     border-radius: 5px;
-    width: 300px;
-    max-width: 45%;
-    min-width: 100%;
-    height: 300px;
+    width: 100%;
     display: inline;
     float: left;
     clear: left;
     opacity: 1.0;
     transition: opacity 0.5s ease-in-out;
-    max-height: 100%;
-    min-height: 45%;
 }
 /*Content Parts*/
 .sidebar {
@@ -185,11 +230,11 @@ ul li a {
 }
 .nobackgroundfilledhomecontent ul li a {
     background-color: rgb(255,56,140);
-    font-size: large;
+    font-size: medium;
     font: Arial;
     color:yellow;
     display: inline;
-    width: 130px;
+    width: 100px;
     height: 50px;
     line-height: 30px;
     margin: 10px;
@@ -206,8 +251,8 @@ ul li a {
 }
 /*Normal Content (Images, Headings and Paragraphs*/
 .logo {
-    max-width: 45%;
-    min-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 .villageimg {
     max-width: 45%;
@@ -220,13 +265,16 @@ p1, p2 {
     font-weight: bold;
     display: block;
 }
+h1, h2 {
+    display: block;
+}
 .contentimg {
     max-width: 45%;
     min-width: 100%;
     border-radius: 5px;
 }
 .homepromoimg {
-    max-width: 65%;
+    max-width: 45%;
     min-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -237,20 +285,14 @@ p1, p2 {
 }
 /*===================================FOOTER======================================*/
 #footer {
-    height :130px;
-    width :100%;
-    min-width: 100%;
-    max-width: 45%;
+    height :200px;
+    width: 100%;
     padding :20px 0;
     margin-top :20px;
     background :transparent url("../images/bg-footer.jpg");
     background-repeat :repeat-x;
     background-position :top;
     background-color :#1b6568;
-}
-#footer div {
-    width :960px;
-    margin :0 auto;
 }
 #footer div ul {
     list-style-type :none;
@@ -262,6 +304,8 @@ p1, p2 {
 }
 #footer div ul li img {
     border :0;
+    max-width: 30%;
+    min-width: 100%;
 }
 #footer div ul li {
     float :left;
@@ -296,6 +340,8 @@ p1, p2 {
 }
 #footer div ul li img.logo {
     margin-top :20px;
+    max-width: 30%;
+    min-width: 100%;
 }
 #footer div ul li ul li {
     float :left;
@@ -362,6 +408,8 @@ p1, p2 {
     color :#ebe9d7;
     font-family :'NunitoRegular';
     font-size :14px;
+    max-width: 30%;
+    min-width: 100%;
 }
 #footer div ul li ul.navigation {
     list-style-type :none;
@@ -370,6 +418,8 @@ p1, p2 {
     display :inline-block;
     overflow :hidden;
     height :20px;
+    max-width: 30%;
+    min-width: 100%;
 }
 #footer div ul li ul.navigation li {
     margin :0;
