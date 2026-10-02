@@ -771,3 +771,36 @@ body {
         padding: 20px;
     }
 }
+@media (max-width: 480px) {
+
+.main-content {
+
+padding: 16px;
+
+padding-top: 80px;
+
+}
+
+.sidebar {
+
+position: fixed;
+
+top: 0;
+
+left: 0;
+
+height: 100vh;
+
+width: 180px;
+
+transform: translateX(-100%);
+
+box-shadow: 4px 0 24px var(--shadow);
+
+}
+
+.sidebar.active {
+
+transform: translateX(0);
+   }
+}
